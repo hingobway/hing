@@ -1,4 +1,4 @@
-((function(long_url,callback){
+(function(long_url,callback){
 	var theUrl = prompt("Please enter url.");
     bi = new URL("https://api-ssl.bitly.com/v3/shorten?");
     var params = [
