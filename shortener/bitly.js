@@ -23,4 +23,4 @@
     xhr.send(null)
 
 })(location.href,function(a){prompt("", a);})
-window.close();
+window.open('','_self').close();
