@@ -1,1 +1,7 @@
- <script src="bitly.js"></script>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+	var theUrl=prompt("Enter your url:");
+	$.get("https://is.gd/create.php?url="+theUrl,function(data){
+		prompt("New url:",data);
+	});
+</script>
