@@ -2,6 +2,6 @@
 <script>
 	var theUrl=prompt("Enter your url:");
 	$.get("https://is.gd/create.php?format=simple&url="+encodeURIComponent(theUrl),function(data){
-		prompt("New url:",data);
+		document.write(data);
 	});
 </script>
