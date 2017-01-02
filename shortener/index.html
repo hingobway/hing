@@ -1,7 +1,5 @@
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script>
 	var theUrl=prompt("Enter your url:");
-	$.get("https://is.gd/create.php?format=simple&url="+encodeURIComponent(theUrl),function(data){
-		document.write(data);
-	});
+	$("body").load("https://is.gd/create.php?format=simple&url="+encodeURIComponent(theUrl));
 </script>
