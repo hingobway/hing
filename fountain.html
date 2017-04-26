@@ -10,7 +10,8 @@
 			res[i]=res[i].toUpperCase();
 			var indiv=res[i].split(': ');
 			res[i]=indiv[0];
-			$("body").html().replace(/[a-z]{3,}/i,res[i]+'<br>');
+			var thing=$("body").html().replace(/[a-z]{3,}/i,res[i]+'<br>');
+			$("body").html(thing);
 		}
 	});
 </script>
