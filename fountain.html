@@ -3,7 +3,7 @@
 <head>
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script>
-	function rep(){
+	$(document).ready(function(){
 		var res=$("body").html().match(/[a-z]{3,}: /gi);  
 		for(i=0;i<res.length;i++){
 			res[i]=res[i].toUpperCase();
@@ -11,7 +11,7 @@
 			res[i]=indiv[0];
 			$("body").html().replace(/[a-z]{3,}/i,res[i]+'<br>');
 		}
-	}
+	});
 </script>
 </head>
 <body>
