@@ -5,6 +5,7 @@
 <script>
 	$(document).ready(function(){
 		var res=$("body").html().match(/[a-z]{3,}: /gi);  
+		console.log(res);
 		for(i=0;i<res.length;i++){
 			res[i]=res[i].toUpperCase();
 			var indiv=res[i].split(': ');
